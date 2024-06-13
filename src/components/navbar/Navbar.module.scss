@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .logo {
+        img {
+            height: 40px;
+        }
+    }
+
+    .navLinks {
+        display: none;
+
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+
+            a {
+                text-decoration: none;
+                color: #333;
+
+                &.active {
+                    color: #0073e6;
+                }
+            }
+        }
+    }
+
+    .menuIcon {
+        display: block;
+        cursor: pointer;
+
+        img {
+            height: 30px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .navLinks {
+            display: flex;
+        }
+
+        .menuIcon {
+            display: none;
+        }
+    }
+
+    .mobileMenuOpen {
+        display: block;
+
+        li {
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+}
