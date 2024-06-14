@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "light blue",
+            "url": ""
+        },
+        {
+            "id": 2,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "light gray", 
+            "url": ""
+        },
+        {
+            "id": 3,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "dark gray",
+            "url": ""
+        },
+        {
+            "id": 4,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "gray",
+            "url": ""
+        },
+        {
+            "id": 5,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "light green",
+            "url": ""
+        },
+        {
+            "id": 6,
+            "name": "Google Pixel Buds Pro",
+            "category": "Music & Sound",
+            "price€": 229.00,
+            "color": "New York pink",
+            "url": ""
+        },
+        {
+            "id": 7,
+            "name": "Fitbit Inspire 3",
+            "category": "Health & Fitness Tracker",
+            "price€": 99.95,
+            "color": "Midnight Zen",
+            "url": ""
+        },
+        {
+            "id": 8,
+            "name": "Fitbit Inspire 3",
+            "category": "Health & Fitness Tracker",
+            "price€": 99.95,
+            "color": "Lilac Bliss",
+            "url": ""
+        },
+        {
+            "id": 9,
+            "name": "Fitbit Inspire 3",
+            "category": "Health & Fitness Tracker",
+            "price€": 99.95,
+            "color": "Morning Glow",
+            "url": ""
+        }
+    ]
+}
