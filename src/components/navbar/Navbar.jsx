@@ -1,35 +1,56 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Navbar.module.scss';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import NavLogo from "./NavLogo";
+import NavIcon from "./NavIcon";
 
-const Navbar = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const NavbarContainer = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
 
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+const NavIconsContainer = styled.div`
+    display: flex;
+    align-items: center;
+`;
 
-    return (
-        <nav className={styles.navbar}>
-            <Link to="/" className={styles.logo}>
-                <img src="/assets/img/google-logo.png" alt="Logo" />
-            </Link>
-            <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-                <li>
-                    <Link to="/earbuds" activeClassName={styles.active}>Earbuds</Link>
-                </li>
-                <li>
-                    <Link to="/watches" activeClassName={styles.active}>Watches</Link>
-                </li>
-                <li>
-                    <Link to="/cart" activeClassName={styles.active}>Cart</Link>
-                </li>
-            </ul>
-            <div className={styles.menuIcon} onClick={toggleMobileMenu}>
-                <img src="/assets/img/menu-icon.png" alt="Menu" />
-            </div>
-        </nav>
-    );
-};
+const NavLinksContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: #1a73e8;
+    }
+}
+`;
+
+const Navbar = () => (
+    <NavbarContainer>
+    <NavLogo />
+    <NavLinksContainer>
+        <a href="/phones">Phones</a>
+        <a href="/earbuds">Earbuds</a>
+        <a href="/watches">Watches</a>
+        <a href="/smarthome">Smart Home</a>
+        <a href="/accessories">Accessories</a>
+        <a href="/subscriptions">Subscriptions</a>
+    </NavLinksContainer>
+    <NavIconsContainer>
+        <NavIcon src="/assets/img/icons/Search.svg" alt="Search" />
+        <NavIcon src="/assets/img/icons/Help.svg" alt="Help" />
+        <NavIcon src="/assets/img/icons/Cart.svg" alt="Cart" />
+        <NavIcon src="/assets/img/icons/Avatar.svg" alt="Avatar" />
+        <NavIcon src="/assets/img/icons/Menu.svg" alt="Menu" />
+    </NavIconsContainer>
+    </NavbarContainer>
+);
 
 export default Navbar;

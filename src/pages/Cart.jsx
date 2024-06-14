@@ -1,45 +1,53 @@
-// src/pages/Watches.jsx
 
-import styles from './Cart.module.scss';
+import styled from 'styled-components';
+
+const CartContainer = styled.div`
+  padding: 2rem;
+  background-color: #f9f9f9;
+`;
+
+const CartTitle = styled.h1`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+`;
+
+const CartItem = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
+
+const CartItemName = styled.span`
+  font-size: 1.2rem;
+`;
+
+const CartItemPrice = styled.span`
+  font-size: 1.2rem;
+  color: #333;
+`;
 
 const Cart = () => {
-    const cartItems = [
-        { id: 1, name: 'Google Pixel Buds Pro', price: 229, quantity: 1, image: '/assets/img/earbuds/earbuds_01.png' },
-        { id: 2, name: 'Fitbit Inspire 3', price: 99.95, quantity: 2, image: '/assets/img/smartwatch/smartwatch_black.png' }
-    ];
+  const cartItems = [
+    { id: 1, name: 'Google Pixel Buds Pro', price: '229,00 €' },
+    { id: 2, name: 'Fitbit Inspire 3', price: '99,95 €' },
+  ];
 
-    const shippingCost = 4.90;
-    const calculateSubtotal = () => {
-        return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-    };
-
-    const total = calculateSubtotal() + shippingCost;
-
-    return (
-        <div className={styles.cartPage}>
-            <h1>Cart (3 items)</h1>
-            <div className={styles.cartItems}>
-                {cartItems.map(item => (
-                    <div key={item.id} className={styles.cartItem}>
-                        <img src={item.image} alt={item.name} />
-                        <div className={styles.itemDetails}>
-                            <p>{item.name}</p>
-                            <p>Cant: {item.quantity}</p>
-                            <p>€{item.price}</p>
-                            <button>Remove</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <div className={styles.orderSummary}>
-                <h2>Order Summary</h2>
-                <p>Subtotal: €{calculateSubtotal().toFixed(2)}</p>
-                <p>Shipping costs: €{shippingCost}</p>
-                <p>Total estimated: €{total.toFixed(2)}</p>
-                <button>Complete the purchase</button>
-            </div>
-        </div>
-    );
+  return (
+    <CartContainer>
+      <CartTitle>Cart</CartTitle>
+      {cartItems.map(item => (
+        <CartItem key={item.id}>
+          <CartItemName>{item.name}</CartItemName>
+          <CartItemPrice>{item.price}</CartItemPrice>
+        </CartItem>
+      ))}
+    </CartContainer>
+  );
 };
 
 export default Cart;
