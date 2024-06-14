@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 ## Description 
 Google Store by Riak is a store of Google technology products basically created with React. Our goal is to simulate a simple and intuitive interface to users so that they can have the greatest user experience possible. For each item you can choose the quantity and color (depends on the item). Also, on the same page it indicates the approximate shipping date.
 
-### Installation instructions 
+### Installation instructions (for developers)
 ### downloads: 📶
 - Visual Studio Code, Git Bash, React, Vite, Node.js (14 or superior), npm (version 6 or superior)
 
@@ -33,6 +33,11 @@ cd google-store-react
 
 The site will be available at `http://localhost:3000`.
 
+### Installation instructions (for users)
+
+Enter the link that we attach below: www.googleriak.com (provisional)
+
+
 ## Use 🏪
 We are simulating a Google store with two products so that you can see what this finished project would be since it is under construction 🚧🚧🚧
 
@@ -50,6 +55,6 @@ This project is licensed under x license. See the [LICENSE](./LICENSE) file for 
 
 ## Contact
 Created by Riak (https://your-site-web.com)
-If you have any questions or suggestions, feel free to send us an email to: jessica18_24@hotmail.com, sarita248@outlook.es, angelicanakaridperezpino@gmail.com, fifi04@live.com, castellanorn@gmail.com .
+If you want to discuss something related to a specific project, you can open an Issue or comment on a Pull Request in our Git Hub profile. Make sure you are clear and respectful in your message..🙌
 
 ---
