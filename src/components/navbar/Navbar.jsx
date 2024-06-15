@@ -26,17 +26,17 @@ const NavIconsContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: end;
-    grid-column-start: 2;
 
     @media (min-width: 480px) {
-        /* Estilos para tablets */
         gap: 0.5rem;
     }
 
     @media (min-width: 768px) {
-        /* Estilos para desktops */
         gap: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        gap: 1.5rem;
     }
 `;
 
@@ -45,22 +45,20 @@ const NavLinksContainer = styled.div`
     align-items: center;
     font-size: 0.75rem;
     margin-right: 10px;
+    gap: 3rem;
+    margin-right: 34.375rem;
 
-    active-link {
-    color: #1a73e8;
-    font-weight:  700;
-    }
+    a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #353a49;
+        font-size: 0.75rem;
+        font-weight: 400;
 
-a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #353a49;
-    font-size: 0.75rem;
-    font-weight: 400;
-
-    &:hover {
-        color: #1a73e8;
-        font-weight: 700;
+        &:hover {
+            color: #1a73e8;
+            font-weight: 700;
+        }
     }
 
     @media (max-width: 768px) {
@@ -69,19 +67,20 @@ a {
         width: 100%;
         text-align: center;
     }
-}
 
-    @media (min-width: 744px) {
+    @media (min-width: 768px) {
         display: flex;
         justify-content: space-evenly;
         flex-grow: 2;
-}
+    }
 `;
+
 
 const MenuIcon = styled.div`
     display: block;
     cursor: pointer;
-    justify-content: space-between;
+    margin-left: auto;
+    gap: 1rem;
 
     @media (min-width: 768px) {
         display: none;
