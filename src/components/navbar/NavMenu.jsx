@@ -26,7 +26,7 @@ const NavMenu = () => {
         <a href="/accessories">Accessories</a>
         <a href="/subscriptions">Subscriptions</a>
       </NavLinks>
-      <MenuIcon src="/assets/img/icons/Menu.svg" alt="Menu" />
+      <MenuIcon src="/public/img/icons/Menu.svg" alt="Menu" />
     </div>
   );
 };

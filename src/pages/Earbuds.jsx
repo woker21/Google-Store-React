@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styled from 'styled-components';
 
 const EarbudsContainer = styled.div`
@@ -40,10 +40,10 @@ const ColorButton = styled.button`
 const Earbuds = () => {
   const [selectedColor, setSelectedColor] = useState('earbuds_01');
   const colors = {
-    earbuds_01: '/assets/img/earbuds/earbuds_01.png',
-    earbuds_02: '/assets/img/earbuds/earbuds_02.png',
-    earbuds_03: '/assets/img/earbuds/earbuds_03.png',
-    earbuds_04: '/assets/img/earbuds/earbuds_04.png',
+    earbuds_01: '/public/img/earbuds/earbuds_01.png',
+    earbuds_02: '/public/img/earbuds/earbuds_02.png',
+    earbuds_03: '/public/img/earbuds/earbuds_03.png',
+    earbuds_04: '/public/img/earbuds/earbuds_04.png',
   };
 
   return (

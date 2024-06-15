@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 import NavLogo from "./NavLogo";
 import NavIcon from "./NavIcon";
 
 const NavbarContainer = styled.nav`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-inline: 1rem;
+  background-color: white;
+  box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.2);
 `;
 
 const NavIconsContainer = styled.div`
@@ -20,6 +21,7 @@ const NavIconsContainer = styled.div`
 const NavLinksContainer = styled.div`
     display: flex;
     align-items: center;
+    font-size: 0.75rem;
 
 a {
     margin: 0 1rem;
@@ -28,6 +30,7 @@ a {
 
     &:hover {
         color: #1a73e8;
+        font-weight: 700;
     }
 }
 `;
@@ -44,11 +47,11 @@ const Navbar = () => (
         <a href="/subscriptions">Subscriptions</a>
     </NavLinksContainer>
     <NavIconsContainer>
-        <NavIcon src="/assets/img/icons/Search.svg" alt="Search" />
-        <NavIcon src="/assets/img/icons/Help.svg" alt="Help" />
-        <NavIcon src="/assets/img/icons/Cart.svg" alt="Cart" />
-        <NavIcon src="/assets/img/icons/Avatar.svg" alt="Avatar" />
-        <NavIcon src="/assets/img/icons/Menu.svg" alt="Menu" />
+        <NavIcon src="/public/img/icons/Search.svg" alt="Search" />
+        <NavIcon src="/public/img/icons/Help.svg" alt="Help" />
+        <NavIcon src="/public/img/icons/Cart.svg" alt="Cart" />
+        <NavIcon src="/public/img/icons/Avatar.svg" alt="Avatar" />
+        <NavIcon src="/public/img/icons/Menu.svg" alt="Menu" />
     </NavIconsContainer>
     </NavbarContainer>
 );
