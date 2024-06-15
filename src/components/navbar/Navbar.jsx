@@ -4,28 +4,38 @@ import NavLogo from "./NavLogo";
 import NavIcon from "./NavIcon";
 import NavLinks from "./NavLinks";
 
-
 const NavbarContainer = styled.nav`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1rem;
-
     background-color: white;
-    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.2);;
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.2);
+    padding-inline: 1rem;
 
-    @media (max-width: 768px) {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-}
+    @media (min-width: 768px) {
+        justify-content: space-around;
+    }
+
+    @media (min-width: 1024px) {
+        justify-content: space-between;
+    }
 `;
 
 const NavIconsContainer = styled.div`
     display: flex;
     align-items: center;
-    
-    @media (max-width: 768px) {
+    gap: 1rem;
+    justify-content: end;
+    grid-column-start: 2;
+
+    @media (min-width: 480px) {
+        /* Estilos para tablets */
+        gap: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+        /* Estilos para desktops */
         gap: 1rem;
     }
 `;
@@ -34,11 +44,19 @@ const NavLinksContainer = styled.div`
     display: flex;
     align-items: center;
     font-size: 0.75rem;
+    margin-right: 10px;
+
+    active-link {
+    color: #1a73e8;
+    font-weight:  700;
+    }
 
 a {
     margin: 0 1rem;
     text-decoration: none;
-    color: black;
+    color: #353a49;
+    font-size: 0.75rem;
+    font-weight: 400;
 
     &:hover {
         color: #1a73e8;
@@ -61,13 +79,13 @@ a {
 `;
 
 const MenuIcon = styled.div`
-    display: none;
+    display: block;
+    cursor: pointer;
+    justify-content: space-between;
 
-    @media (max-width: 768px) {
-        display: block;
-        cursor: pointer;
-    
-}
+    @media (min-width: 768px) {
+        display: none;
+    }
 `;
 
 

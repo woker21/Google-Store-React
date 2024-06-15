@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const Logo = styled.img`
-  width: 33px;
-  height: 33px;
+  grid-column-start: 2;
+  width: 2rem;
+  height: 2rem;
   margin-top: 5px;
 `;
 
