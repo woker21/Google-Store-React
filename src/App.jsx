@@ -1,7 +1,7 @@
 //import { useState } from "react";
 import { FooterSM } from "./components/FooterSM";
 import { FooterTerm } from "./components/FooterTerm";
-//import { SeeDetails } from "./components/SeeDetails";
+import { SeeDetail } from "./components/SeeDetail";
 
 import "./App.css";
 
@@ -16,8 +16,8 @@ function App() {
     </header>
 
 
-
     <main>
+      <SeeDetail/>
 
     </main>
 
