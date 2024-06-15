@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Logo = styled.img`
   width: 33px;
   height: 33px;
+  margin-top: 5px;
 `;
 
 const NavLogo = () => (

@@ -5,7 +5,20 @@ const Icon = styled.img`
     width: 19px;
     margin-left: 1rem;
     cursor: pointer;
+
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+        margin: 1rem 0;
+        gap: 1rem;
+        flex-grow: 3;
+    }
 `;
+
+
 
 const NavIcon = ({ src, alt }) => <Icon src={src} alt={alt} />;
 
