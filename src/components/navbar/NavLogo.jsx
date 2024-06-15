@@ -7,7 +7,7 @@ const Logo = styled.img`
 
 const NavLogo = () => (
   <a href="/">
-    <Logo src="/public/img/google-logo.png" alt="Google" />
+    <Logo src="/img/google-logo.png" alt="Google" />
   </a>
 );
 

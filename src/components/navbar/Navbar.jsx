@@ -5,12 +5,12 @@ import NavIcon from "./NavIcon";
 
 const NavbarContainer = styled.nav`
     display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
-  padding-inline: 1rem;
-  background-color: white;
-  box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-inline: 1rem;
+    background-color: white;
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.2);;
 `;
 
 const NavIconsContainer = styled.div`
@@ -47,11 +47,11 @@ const Navbar = () => (
         <a href="/subscriptions">Subscriptions</a>
     </NavLinksContainer>
     <NavIconsContainer>
-        <NavIcon src="/public/img/icons/Search.svg" alt="Search" />
-        <NavIcon src="/public/img/icons/Help.svg" alt="Help" />
-        <NavIcon src="/public/img/icons/Cart.svg" alt="Cart" />
-        <NavIcon src="/public/img/icons/Avatar.svg" alt="Avatar" />
-        <NavIcon src="/public/img/icons/Menu.svg" alt="Menu" />
+        <NavIcon src="/img/icons/Search.svg" alt="Search" />
+        <NavIcon src="/img/icons/Help.svg" alt="Help" />
+        <NavIcon src="/img/icons/Cart.svg" alt="Cart" />
+        <NavIcon src="/img/icons/Avatar.svg" alt="Avatar" />
+        <NavIcon src="/img/icons/Menu.svg" alt="Menu" />
     </NavIconsContainer>
     </NavbarContainer>
 );

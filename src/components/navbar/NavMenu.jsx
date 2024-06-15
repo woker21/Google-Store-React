@@ -8,25 +8,11 @@ const MenuIcon = styled(NavIcon)`
   }
 `;
 
-const NavLinks = styled.div`
-  display: flex;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 
 const NavMenu = () => {
   return (
     <div>
-      <NavLinks>
-        <a href="/phones">Phones</a>
-        <a href="/earbuds">Earbuds</a>
-        <a href="/watches">Watches</a>
-        <a href="/smarthome">Smart Home</a>
-        <a href="/accessories">Accessories</a>
-        <a href="/subscriptions">Subscriptions</a>
-      </NavLinks>
-      <MenuIcon src="/public/img/icons/Menu.svg" alt="Menu" />
+      <MenuIcon src="/img/icons/Menu.svg" alt="Menu" />
     </div>
   );
 };
