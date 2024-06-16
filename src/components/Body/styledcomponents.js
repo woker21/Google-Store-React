@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 
 
-const Main = styled.div`
+export const Main = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
 `;
 
-const Galeria = styled.div`
-  width: 65%;
+export const Galeria = styled.div`
+  width: 40%;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -22,21 +22,32 @@ const Galeria = styled.div`
   }
 `;
 
-const ImagenMini = styled.div`
+export const ImagenMini = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 60%; /* Ajusta según tu diseño */
+  max-width: 50px; 
   justify-content: center;
 
   @media (max-width: 768px) {
-    display: none; /* Oculta las miniaturas en dispositivos móviles */
+    display: none; 
   }
 `;
 
-const FullImage = styled.div`
+export const MiniImg = styled.img`
+width: 100%;
+height: auto;
+display: block;
+border: 1px solid #57626B;
+border-radius: 50%;
+margin-bottom: 15px;
+padding: 2.5px;
+`;
+
+
+export const FullImage = styled.div`
   background-color: #F8F9FB;
-  width: 85%;
+  width: 65%;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -44,12 +55,12 @@ const FullImage = styled.div`
   border-radius: 25px;
 
   @media (max-width: 768px) {
-    width: 100%; /* Asegura que la imagen grande ocupe todo el ancho en dispositivos móviles */
+    width: 100%; 
     height: auto;
   }
 `;
 
-const Img = styled.img`
+export const Img = styled.img`
   width: 100%;
   height: auto;
   display: block;
