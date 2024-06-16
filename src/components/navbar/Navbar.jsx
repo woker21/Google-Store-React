@@ -25,10 +25,10 @@ const NavbarContainer = styled.nav`
 const NavIconsContainer = styled.div`
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.4rem;
 
     @media (min-width: 480px) {
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     @media (min-width: 768px) {
@@ -99,7 +99,6 @@ const Navbar = () => {
         <NavbarContainer>
             <NavLogo />
             <MenuIcon onClick={toggleMenu}>
-                <NavIcon src="/img/icons/Menu.svg" alt="Menu" />
             </MenuIcon>
             <NavLinksContainer isOpen={isOpen}>
                 <NavLinks />
@@ -110,7 +109,9 @@ const Navbar = () => {
                 <NavIcon src="img/icons/Cart.svg" alt="Cart" />
                 <NavIcon src="img/icons/Avatar.svg" alt="Avatar" />
             </NavIconsContainer>
+                <NavIcon src="/img/icons/Menu.svg" alt="Menu" />
         </NavbarContainer>
     );
 };
+
 export default Navbar;
