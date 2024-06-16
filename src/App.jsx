@@ -1,25 +1,24 @@
+
+import BodyGoogle from "../src/components/Body/BodyGoogle"
 //import { useState } from "react";
 import { FooterSM } from "./components/FooterSM";
 import { FooterTerm } from "./components/FooterTerm";
 import { SeeDetail } from "./components/SeeDetail";
 
-import "./App.css";
-
-function App() {
-  //const [count, setCount] = useState(0);
-
-  return (
-    <>
-
-    <header>
-    
-    </header>
 
 
+
+
+
+
+
+function App(){
+  return(
+  <>
+    <BodyGoogle/>
     <main>
       <SeeDetail/>
 
-    </main>
 
 
     <footer className="footer">
@@ -30,4 +29,5 @@ function App() {
   );
 }
 
-export default App;
+export default App 
+
