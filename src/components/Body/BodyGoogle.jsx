@@ -1,6 +1,5 @@
 
-import {
-  Main, Img,Galeria, ImagenMini, FullImage,} from './styledcomponents';
+import {Main,Img,Galeria, ImagenMini,MiniImg, FullImage,} from './styledcomponents';
 
   // Importar las imágenes
 import Earbuds01 from '../../assets/img/earbuds/earbuds_01.png';
@@ -14,16 +13,16 @@ const BodyGoogle = () => {
       <Galeria>
         <ImagenMini>
           <div>
-            <Img src={Earbuds01} alt="earbuds google complete" />
+            <MiniImg src={Earbuds01} alt="earbuds google complete" />
           </div>
           <div>
-            <Img src={Earbuds02} alt="earbuds google one side" />
+            <MiniImg src={Earbuds02} alt="earbuds google one side" />
           </div>
           <div>
-            <Img src={Earbuds03} alt="earbuds google other side" />
+            <MiniImg src={Earbuds03} alt="earbuds google other side" />
           </div>
           <div>
-            <Img src={Earbuds04} alt="earbuds google details" />
+            <MiniImg src={Earbuds04} alt="earbuds google details" />
           </div>
         </ImagenMini>
         <FullImage>
