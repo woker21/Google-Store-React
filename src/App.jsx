@@ -6,12 +6,13 @@ import { CartTitle } from "./components/Cart";
 import { CartItem } from "./components/CartItem";
 import { CartSummary } from "./components/CartSummary";
 import NavBar from "./components/navbar/Navbar";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { FooterTerm } from "./components/FooterTerm";
+import { FooterSM } from "./components/FooterSM";
 
 
 const App = () => {
   return (
-     <Router>
+     <>
       <header>
         <NavBar />
       </header>
@@ -27,9 +28,10 @@ const App = () => {
       <CartSummary/>
     </section>
     <footer className="footer">
+      <FooterSM />
+      <FooterTerm/>
     </footer>
-
-    </Router>
+    </>
   );
 }
 
