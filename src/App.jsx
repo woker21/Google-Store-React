@@ -1,8 +1,10 @@
 
 import BodyGoogle from "../src/components/Body/BodyGoogle";
 //import { useState } from "react";
-
 import { SeeDetail } from "./components/SeeDetail";
+import { CartTitle } from "./components/Cart";
+import { CartItem } from "./components/CartItem";
+import { CartSummary } from "./components/CartSummary";
 import NavBar from "./components/navbar/Navbar";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -18,9 +20,15 @@ const App = () => {
       <BodyGoogle />
       </main>
 
-      <footer className="footer">
+    <section>
+      <CartTitle/>
+      <CartItem/>
+      <CartSummary/>
+    </section>
 
-      </footer>
+    <footer className="footer">
+    </footer>
+    
     </Router>
   );
 }
