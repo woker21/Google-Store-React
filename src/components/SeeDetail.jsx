@@ -18,16 +18,16 @@ const Icons = styled.a`
 
 const Detail = styled.h3`
     font-size: 12px;
-    font-style: normal;
+    font-weight: 400;
+    color: #353a49;
 `;
 
 const SeeDetail = () => {
     return(
         <>
-        <hr className="division" />
         <SeeProduct className="detail">
             <Icons href="">
-                <img src="../public/img/icons/Arrow.svg" alt="return" />
+                <img src="../img/icons/Arrow.svg" alt="return" />
             </Icons>
             <Detail>See product details</Detail>
         </SeeProduct>
