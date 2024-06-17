@@ -1,34 +1,37 @@
-//import { useState } from "react";
-import { FooterSM } from "./components/FooterSM";
-import { FooterTerm } from "./components/FooterTerm";
 import {ProdTitle} from "./components/ProdTitle";
-//import { SeeDetails } from "./components/SeeDetails";
+import BodyGoogle from "../src/components/Body/BodyGoogle";
+//import { useState } from "react";
+import { SeeDetail } from "./components/SeeDetail";
+import { CartTitle } from "./components/Cart";
+import { CartItem } from "./components/CartItem";
+import { CartSummary } from "./components/CartSummary";
+import NavBar from "./components/navbar/Navbar";
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import "./App.css";
 
-function App() {
-  //const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
+     <Router>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+      <SeeDetail />
+      <BodyGoogle />
+      <ProdTitle/>
+      </main>
 
-    <header>
-    
-    </header>
-
-
-
-    <main>
-     <ProdTitle></ProdTitle>
-    </main>
-
-
+    <section>
+      <CartTitle/>
+      <CartItem/>
+      <CartSummary/>
+    </section>
     <footer className="footer">
-      <FooterTerm/>
-      <FooterSM />
-      </footer>
-    </>
+    </footer>
+
+    </Router>
   );
 }
 
 export default App;
+
