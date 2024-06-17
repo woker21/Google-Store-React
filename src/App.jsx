@@ -1,28 +1,24 @@
+
+import BodyGoogle from "../src/components/Body/BodyGoogle";
 //import { useState } from "react";
-import { FooterSM } from "./components/FooterSM";
-import { FooterTerm } from "./components/FooterTerm";
 import { SeeDetail } from "./components/SeeDetail";
 import { CartTitle } from "./components/Cart";
 import { CartItem } from "./components/CartItem";
 import { CartSummary } from "./components/CartSummary";
+import NavBar from "./components/navbar/Navbar";
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import "./App.css";
 
-function App() {
-  //const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-
-    <header>
-    
-    </header>
-
-
-    <main>
-      <SeeDetail/>
-      
-    </main>
+    <Router>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+      <SeeDetail />
+      <BodyGoogle />
+      </main>
 
     <section>
       <CartTitle/>
@@ -30,14 +26,12 @@ function App() {
       <CartSummary/>
     </section>
 
-
     <footer className="footer">
-      <FooterTerm/>
-      <FooterSM />
-      </footer>
-
-    </>
+    </footer>
+    
+    </Router>
   );
 }
 
 export default App;
+
