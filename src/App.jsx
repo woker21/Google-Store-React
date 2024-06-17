@@ -1,4 +1,4 @@
-
+import {ProdTitle} from "./components/ProdTitle";
 import BodyGoogle from "../src/components/Body/BodyGoogle";
 //import { useState } from "react";
 import { SeeDetail } from "./components/SeeDetail";
@@ -11,13 +11,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+     <Router>
       <header>
         <NavBar />
       </header>
       <main>
       <SeeDetail />
       <BodyGoogle />
+      <ProdTitle/>
       </main>
 
     <section>
@@ -25,10 +26,9 @@ const App = () => {
       <CartItem/>
       <CartSummary/>
     </section>
-
     <footer className="footer">
     </footer>
-    
+
     </Router>
   );
 }
