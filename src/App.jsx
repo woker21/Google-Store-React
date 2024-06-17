@@ -1,27 +1,32 @@
+import {ProdTitle} from "./components/ProdTitle";
+import BodyGoogle from "../src/components/Body/BodyGoogle";
 //import { useState } from "react";
-import { FooterSM } from "./components/FooterSM";
+import { SeeDetail } from "./components/SeeDetail";
+import { CartTitle } from "./components/Cart";
+import { CartItem } from "./components/CartItem";
+import { CartSummary } from "./components/CartSummary";
+import NavBar from "./components/navbar/Navbar";
 import { FooterTerm } from "./components/FooterTerm";
-//import { SeeDetails } from "./components/SeeDetails";
+import { FooterSM } from "./components/FooterSM";
 
-import "./App.css";
 
-function App() {
-  //const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
+     <>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+      <SeeDetail />
+      <BodyGoogle />
+      <ProdTitle/>
+      </main>
 
-    <header>
-    
-    </header>
-
-
-
-    <main>
-
-    </main>
-
-
+    <section>
+      <CartTitle/>
+      <CartItem/>
+      <CartSummary/>
+    </section>
     <footer className="footer">
       <FooterSM />
       <FooterTerm/>
@@ -31,3 +36,4 @@ function App() {
 }
 
 export default App;
+
