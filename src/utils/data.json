@@ -6,7 +6,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "light blue",
-            "url": ""
+            "url": "../../public/img/earbuds/earbuds_01.png"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "light gray", 
-            "url": ""
+            "url": "../../public/img/earbuds/earbuds_01.png"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "dark gray",
-            "url": ""
+            "url": "../../public/img/earbuds/earbuds_01.png"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "gray",
-            "url": ""
+            "url": "../../public/img/earbuds/earbuds_01.png"
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "light green",
-            "url": ""
+            "url": "../../public/img/earbuds/earbuds_01.png"
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "category": "Music & Sound",
             "price€": 229.00,
             "color": "New York pink",
-            "url": ""
+            "url": "../../public/img/smartwatch/smartwatch_black.png"
         },
         {
             "id": 7,
@@ -54,7 +54,7 @@
             "category": "Health & Fitness Tracker",
             "price€": 99.95,
             "color": "Midnight Zen",
-            "url": ""
+            "url": "../../public/img/smartwatch/smartwatch_pink.png"
         },
         {
             "id": 8,
@@ -62,7 +62,7 @@
             "category": "Health & Fitness Tracker",
             "price€": 99.95,
             "color": "Lilac Bliss",
-            "url": ""
+            "url": "../../public/img/smartwatch/smartwatch_yellow.png"
         },
         {
             "id": 9,
