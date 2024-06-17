@@ -23,9 +23,9 @@ function App() {
 
 
     <footer className="footer">
-      <FooterTerm/>
       <FooterSM />
-      </footer>
+      <FooterTerm/>
+    </footer>
     </>
   );
 }
