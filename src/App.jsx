@@ -2,6 +2,9 @@
 import { FooterSM } from "./components/FooterSM";
 import { FooterTerm } from "./components/FooterTerm";
 import { SeeDetail } from "./components/SeeDetail";
+import { CartTitle } from "./components/Cart";
+import { CartItem } from "./components/CartItem";
+import { CartSummary } from "./components/CartSummary";
 
 import "./App.css";
 
@@ -18,14 +21,21 @@ function App() {
 
     <main>
       <SeeDetail/>
-
+      
     </main>
+
+    <section>
+      <CartTitle/>
+      <CartItem/>
+      <CartSummary/>
+    </section>
 
 
     <footer className="footer">
       <FooterTerm/>
       <FooterSM />
       </footer>
+
     </>
   );
 }
