@@ -5,7 +5,7 @@ const NavLinksContainer = styled.div`
     display: flex;
     align-items: center;
     font-size: 0.75rem;
-    margin-right: 10px;
+    margin: 0.8rem;
 
     a {
         margin: 0 1rem;

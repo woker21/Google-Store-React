@@ -27,7 +27,7 @@ const SeeDetail = () => {
         <>
         <SeeProduct className="detail">
             <Icons href="">
-                <img src="../public/img/icons/Arrow.svg" alt="return" />
+                <img src="../img/icons/Arrow.svg" alt="return" />
             </Icons>
             <Detail>See product details</Detail>
         </SeeProduct>
