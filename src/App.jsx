@@ -1,6 +1,7 @@
 //import { useState } from "react";
 import { FooterSM } from "./components/FooterSM";
 import { FooterTerm } from "./components/FooterTerm";
+import {ProdTitle} from "./components/ProdTitle";
 //import { SeeDetails } from "./components/SeeDetails";
 
 import "./App.css";
@@ -18,7 +19,7 @@ function App() {
 
 
     <main>
-
+     <ProdTitle></ProdTitle>
     </main>
 
 
