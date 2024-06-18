@@ -13,7 +13,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+<<<<<<< Updated upstream
     "save": "^2.9.0",
+=======
+>>>>>>> Stashed changes
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

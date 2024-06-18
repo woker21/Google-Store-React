@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Echo Dot (4th Gen)",
+        "price": "$49.99",
+        "description": "Smart speaker with Alexa",
+        "url": "https://www.amazon.com/dp/B07XJ8C8F5"
+    },
+    {
+        "id": 2,
+        "name": "Fire TV Stick 4K",
+        "price": "$39.99",
+        "description": "Streaming device with Alexa Voice Remote",
+        "url": "https://www.amazon.com/dp/B08XVYZ1Y5"
+    },
+    {
+        "id": 3,
+        "name": "Kindle Paperwhite",
+        "price": "$129.99",
+        "description": "Waterproof e-reader with 6.8\" display",
+        "url": "https://www.amazon.com/dp/B08KTZ8249"
+    },
+    {
+        "id": 4,
+        "name": "Apple AirPods Pro",
+        "price": "$249.00",
+        "description": "Active noise cancelling earbuds",
+        "url": "https://www.amazon.com/dp/B07ZPC9QD4"
+    },
+    {
+        "id": 5,
+        "name": "Instant Pot Duo",
+        "price": "$89.99",
+        "description": "7-in-1 electric pressure cooker",
+        "url": "https://www.amazon.com/dp/B01B1VC13K"
+    },
+    {
+        "id": 6,
+        "name": "Sony WH-1000XM4",
+        "price": "$348.00",
+        "description": "Wireless noise cancelling headphones",
+        "url": "https://www.amazon.com/dp/B0863TXGM3"
+    },
+    {
+        "id": 7,
+        "name": "Samsung Galaxy S21",
+        "price": "$799.99",
+        "description": "5G smartphone with 128GB storage",
+        "url": "https://www.amazon.com/dp/B08N2MSSZY"
+    },
+    {
+        "id": 8,
+        "name": "Ninja Air Fryer",
+        "price": "$99.99",
+        "description": "4-quart capacity air fryer",
+        "url": "https://www.amazon.com/dp/B07FDJMC9Q"
+    },
+    {
+        "id": 9,
+        "name": "Fitbit Charge 4",
+        "price": "$149.95",
+        "description": "Fitness and activity tracker with built-in GPS",
+        "url": "https://www.amazon.com/dp/B084CQ41M2"
+    },
+    {
+        "id": 10,
+        "name": "Roku Streaming Stick+",
+        "price": "$49.99",
+        "description": "HD/4K/HDR streaming device",
+        "url": "https://www.amazon.com/dp/B075XLWML4"
+    }
+]
